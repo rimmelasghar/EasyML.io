@@ -1,0 +1,46 @@
+# Ignore Python cache files
+# __pycache__/
+*.pyc
+
+# Ignore environment-related files
+venv/
+env/
+*.env
+.env.*
+
+# Ignore editor and IDE-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore system and temporary files
+*.pyo
+*.pyd
+*.swp
+.DS_Store
+Thumbs.db
+
+# Ignore compiled files and build artifacts
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.exe
+*.dll
+*.out
+*.egg-info/
+dist/
+build/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore local configuration files
+config.yaml
+settings.ini
+
+# Ignore log files
+*.log
+
+# Add any additional files or directories to ignore here
