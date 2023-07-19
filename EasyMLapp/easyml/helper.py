@@ -6,13 +6,14 @@ from settings import BASE_DIR
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
+@st.cache_data
 def get_db():
     file_path = str(BASE_DIR) + "\EasyMLapp\data\db.json"
     with open(file_path, "r") as json_file:
         data = json.load(json_file)
     return data
 
+@st.cache_data
 def file_identifier(file,mime_type):
         if mime_type == "text/csv":
             # Read the user-uploaded CSV file
@@ -68,30 +69,7 @@ def file_identifier(file,mime_type):
             st.stop()
         return df
     
-# def generate_plots(dataframe):
-#     # Iterate through columns and generate appropriate plots
-#     for column in dataframe.columns:
-#         if dataframe[column].dtype == 'object':
-#             # For categorical data (object datatype), generate a count plot
-#             plt.figure(figsize=(8, 5))
-#             sns.countplot(x=column, data=dataframe)
-#             plt.title(f'Count Plot for {column}')
-#             plt.xticks(rotation=45)
-#             st.pyplot(plt)  # Use st.pyplot() to display Matplotlib figures in Streamlit
-#         else:
-#             # For numerical data, generate a histogram and box plot
-#             plt.figure(figsize=(12, 5))
-#             plt.subplot(1, 2, 1)
-#             sns.histplot(dataframe[column], kde=True)
-#             plt.title(f'Histogram for {column}')
-
-#             plt.subplot(1, 2, 2)
-#             sns.boxplot(y=column, data=dataframe)
-#             plt.title(f'Box Plot for {column}')
-
-#             plt.tight_layout()
-#             st.pyplot(plt)  # Use st.pyplot() to display Matplotlib figures in Streamlit
-
+    
 @st.cache_data
 def generate_plots(dataframe):
     # Iterate through columns and generate appropriate plots

@@ -53,8 +53,8 @@ if DATA_PREPROCESSING:
     st.write("Here are the First five rows of the DataFrame")
     st.code("df.head()")
     st.write(df.head())
-    
     st.header("Exploratory Data Analysis - EDA 🚀")
     st.write("Here are Some Graphs for Examining the DataFrame")
     hp.generate_plots(df)
-    
+
+st.markdown("created by Rimmel Asghar with ❤️")
