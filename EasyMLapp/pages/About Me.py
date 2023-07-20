@@ -1,5 +1,7 @@
 import streamlit as st
+from easyml.helper import set_png_as_page_bg
 
+set_png_as_page_bg()
 
 st.markdown('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">', unsafe_allow_html=True)
 

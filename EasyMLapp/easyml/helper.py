@@ -5,6 +5,29 @@ import json
 from settings import BASE_DIR
 import matplotlib.pyplot as plt
 import seaborn as sns
+import base64
+
+def get_base64_of_bin_file2(file_path):
+    with open(file_path, "rb") as file:
+        data = file.read()
+        base64_data = base64.b64encode(data).decode("utf-8")
+    return base64_data
+
+def set_png_as_page_bg():
+    background_image = str(BASE_DIR) + "\EasyMLapp\data\space.png"
+    bin_str = get_base64_of_bin_file2(background_image) 
+    page_bg_img = '''
+    <style>
+    .stApp {
+    background-image: url("data:image/png;base64,%s");
+    background-size: 2000px;
+    background-repeat: no-repeat;
+    background-attachment: scroll; # doesn't work
+    }
+    </style>
+    ''' % bin_str
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+    return
 
 @st.cache_data
 def get_db():

@@ -4,8 +4,9 @@ import easyml.helper as hp
 from settings import BASE_DIR
 import time
 
-db = hp.get_db()
 
+db = hp.get_db()
+hp.set_png_as_page_bg()
 st.title('Data Preprocessing')
 st.write(db["dataPreprocessing"])
 st.subheader('Getting Started with Data Preprocessing 🚀')

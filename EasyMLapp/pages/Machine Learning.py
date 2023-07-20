@@ -1,10 +1,10 @@
 import streamlit as st
 import numpy as np
-from easyml.helper import get_db
+from easyml.helper import get_db,set_png_as_page_bg
 
 
 db = get_db()
-
+set_png_as_page_bg()
 st.title('Machine Learning')
 st.write("Machine learning is a subfield of artificial intelligence (AI) that focuses on the development of algorithms and models that allow computers or machines to learn from and make predictions or decisions based on data, without being explicitly programmed to perform specific tasks.")
 st.subheader("Let's Starts the cool Stuff,Be Ready! 🚀")
