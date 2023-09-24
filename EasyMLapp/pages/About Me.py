@@ -1,7 +1,7 @@
 import streamlit as st
 from easyml.helper import set_png_as_page_bg
 
-set_png_as_page_bg()
+# set_png_as_page_bg()
 
 st.markdown('<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">', unsafe_allow_html=True)
 
@@ -65,11 +65,11 @@ profile_card = """
         <div class="name">Rimmel Asghar</div>
         <div class="skills">Software Engineer with love For Machine Learning<br>Know more about me by visiting the Following links</div>
         <div class="social-links">
-            <a href="https://www.linkedin.com/in/janedoe/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/janedoe" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/janedoe" target="_blank"><i class="fab fa-kaggle"></i></a>
-            <a href="https://twitter.com/janedoe" target="_blank"><i class="fab fa-behance"></i></a>
-            <a href="https://twitter.com/janedoe" target="_blank"><i class="fab fa-medium"></i></a>
+            <a href="https://www.linkedin.com/in/rimmelasghar/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/rimmelasghar" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.kaggle.com/rimmelasghar" target="_blank"><i class="fab fa-kaggle"></i></a>
+            <a href="https://www.behance.net/rimmelasghar" target="_blank"><i class="fab fa-behance"></i></a>
+            <a href="https://medium.com/@rimmelasghar3" target="_blank"><i class="fab fa-medium"></i></a>
         </div>
         
     </div>

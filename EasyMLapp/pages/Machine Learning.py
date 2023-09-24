@@ -4,8 +4,8 @@ from easyml.helper import get_db,set_png_as_page_bg
 
 
 db = get_db()
-set_png_as_page_bg()
-st.title('Machine Learning')
+# set_png_as_page_bg()
+st.title('Machine Learning- Work in Progress')
 st.write("Machine learning is a subfield of artificial intelligence (AI) that focuses on the development of algorithms and models that allow computers or machines to learn from and make predictions or decisions based on data, without being explicitly programmed to perform specific tasks.")
 st.subheader("Let's Starts the cool Stuff,Be Ready! 🚀")
 file = st.file_uploader("Please upload a CSV, Excel, JSON, SQL, HDF5, Parquet, Feather, HTML, or Pickle file.")
