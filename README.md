@@ -27,3 +27,4 @@ Are you ready to unlock the power of artificial intelligence and machine learnin
 Whether you're building recommendation systems, predicting market trends, or simply exploring the endless possibilities of data, EasyML.io is your indispensable tool. Get started today and embark on a journey of discovery and innovation with machine learning.
 
 Feel free to use and adapt this description for EasyML.io according to your specific app's features and focus.
+
