@@ -28,3 +28,10 @@ Whether you're building recommendation systems, predicting market trends, or sim
 
 Feel free to use and adapt this description for EasyML.io according to your specific app's features and focus.
 
+## Demo 🚀
+<video controls>
+  <source src="https://github.com/rimmelasghar/EasyML.io/blob/main/imgs/demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
